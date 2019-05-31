@@ -61,6 +61,7 @@ h3 {
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
+  padding-right: 20px;
 }
 
 #logo {
@@ -214,4 +215,61 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* Styles for different screen sizes */
+
+@media screen and (max-width: 980px){
+  .main-section {
+    width: 65%;
+    margin-left: 30px;
+    margin-bottom: 500px;
+  }  
+
+  #portmain {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #main-container {
+    margin-bottom: 500px;
+  }
+
+  .main-section {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #portmain {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px){
+  #masthead {
+    position: static;
+  }
+
+  #logo {
+    width: 100%;  
+  }
+
+  Nav {
+    float: none;
+    text-align: center;
+    }
+
+  .index {
+    padding: 20px;
+  }
+
+  #main-container {
+    padding-top: 0px;
+  }
+
+  .main-section {
+    margin-bottom: 150px;
+  }
 }
